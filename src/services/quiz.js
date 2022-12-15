@@ -277,7 +277,7 @@ async function submitAnswerAsync(roomCode, playerName, answer) {
 
 function start(instance) {
     if (instance.players.length == 0) {
-        throw new InvalidOperationError('Not enough players yet');
+        throw new InvalidOperationError('There are not enough players yet');
     }
     instance.questionNumber = 1;
     instance.players.forEach(p => {
